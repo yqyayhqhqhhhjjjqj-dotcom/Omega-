@@ -1,48 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chat Aleatorio</title>
-  <link rel="stylesheet" href="/style.css" />
+    <title>Mini Omegle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="topbar">
-      <div class="brand">Chat Aleatorio</div>
-      <div class="status" id="status">Conectando…</div>
-    </header>
 
-    <main class="main">
-      <section class="left">
-        <div class="chat-area" id="chat">
-          <div class="system">Pulsa <strong>Start</strong> para buscar pareja.</div>
-        </div>
+<div id="chat"></div>
 
-        <form id="form" class="composer" onsubmit="return false;">
-          <input id="input" autocomplete="off" placeholder="Escribí algo..." />
-          <button id="sendBtn" class="btn" type="button">Enviar</button>
-        </form>
+<input id="input" type="text" placeholder="Escribe...">
+<button id="send">Enviar</button>
 
-        <div class="controls">
-          <button id="startBtn" class="btn primary">Start</button>
-          <button id="nextBtn" class="btn">Next</button>
-          <button id="disconnectBtn" class="btn danger">Disconnect</button>
-        </div>
-      </section>
-
-      <aside class="right">
-        <h3>Información</h3>
-        <p>Emparejamiento aleatorio con otra persona. Mantené el respeto.</p>
-        <div class="small" id="peerInfo">Esperando...</div>
-      </aside>
-    </main>
-
-    <footer class="footer">
-      <small>Hecho con ❤️ — Versión parecida a Omegle</small>
-    </footer>
-  </div>
-
-  <script src="/client.js"></script>
+<script src="cliente.js"></script>
 </body>
 </html>

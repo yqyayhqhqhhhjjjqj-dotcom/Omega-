@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: omega
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node Server.js"

@@ -1,27 +1,24 @@
-/* Estética limpia, similar a Omegle */
-*{box-sizing:border-box}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0;background:#f6f6f6;color:#111}
-.container{max-width:1000px;margin:20px auto;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.06);overflow:hidden}
-.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid #eee;background:#fafafa}
-.brand{font-weight:700}
-.status{font-size:13px;color:#666}
-.main{display:flex;gap:0}
-.left{flex:2;padding:20px;min-height:400px;display:flex;flex-direction:column}
-.right{flex:1;padding:20px;border-left:1px solid #f0f0f0;background:#fbfbfb}
-.chat-area{flex:1;border:1px solid #eee;border-radius:6px;padding:14px;overflow:auto;background:#fff}
-.system{color:#666;text-align:center;padding:10px}
-.msg{margin:8px 0;padding:10px;border-radius:6px;max-width:75%}
-.msg.me{background:#DCF8C6;margin-left:auto}
-.msg.they{background:#f1f1f1;margin-right:auto}
-.composer{display:flex;margin-top:12px;gap:8px}
-.composer input{flex:1;padding:10px;border-radius:6px;border:1px solid #ddd}
-.btn{padding:8px 12px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer}
-.btn.primary{background:#2d8cff;color:#fff;border-color:#2d8cff}
-.btn.danger{background:#ff6b6b;color:#fff;border-color:#ff6b6b}
-.controls{display:flex;gap:8px;margin-top:12px}
-.small{font-size:13px;color:#555}
-.footer{padding:12px;text-align:center;border-top:1px solid #f0f0f0;background:#fafafa}
-@media(max-width:800px){
-  .main{flex-direction:column}
-  .right{border-left:none;border-top:1px solid #f0f0f0}
+body {
+    font-family: Arial;
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+#chat {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #222;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
 }
